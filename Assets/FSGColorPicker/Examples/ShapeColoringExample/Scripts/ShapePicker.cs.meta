@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 459617f4f0cf55345b5346e32b7170eb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232947
+  packageName: Ultimate Color Picker
+  packageVersion: 1.0
+  assetPath: Assets/FSGColorPicker/Examples/ShapeColoringExample/Scripts/ShapePicker.cs
+  uploadId: 526839

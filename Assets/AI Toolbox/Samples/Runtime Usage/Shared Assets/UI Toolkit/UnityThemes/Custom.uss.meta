@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2969958fb5b4b114fa43d4b71c6343bc
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 12385, guid: 0000000000000000e000000000000000, type: 0}
+  disableValidation: 0
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250892
+  packageName: "AI Toolbox with ChatGPT, DALL\xB7E, Whisper, Gemini etc"
+  packageVersion: 6.6.0
+  assetPath: Assets/AI Toolbox/Samples/Runtime Usage/Shared Assets/UI Toolkit/UnityThemes/Custom.uss
+  uploadId: 691884

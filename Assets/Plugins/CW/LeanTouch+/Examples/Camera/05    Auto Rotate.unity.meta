@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fe7d59ea5900cba448bf42a9d78dce59
+timeCreated: 1523023397
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Camera/05    Auto Rotate.unity
+  uploadId: 653658

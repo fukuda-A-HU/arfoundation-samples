@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2b40c14fc6d3f894fa14ec4b6c180e7a
+timeCreated: 1490407544
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Required/Scripts/LeanFingerHeld.cs
+  uploadId: 653658

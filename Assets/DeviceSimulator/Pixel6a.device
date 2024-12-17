@@ -1,0 +1,14 @@
+{
+    "friendlyName": "Pixel6a",
+    "version": 1,
+    "screens": [
+        {
+            "width": 1080,
+            "height": 2040,
+            "dpi": 450.0
+        }
+    ],
+    "systemInfo": {
+        "operatingSystem": "Android"
+    }
+}

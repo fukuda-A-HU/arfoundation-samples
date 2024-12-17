@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c478421eb6361254aa97d5afe2d538af
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 228069
+  packageName: Shadow Receiver URP (Directional & Additional Light Shadows)
+  packageVersion: 4.0.0
+  assetPath: Assets/DevDunkStudio/ShadowReceiverURP/Light Receiver URP Integration/Light
+    Receiver URP Integration.unitypackage
+  uploadId: 653336

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a2767694428af644cafca553c293d118
+timeCreated: 1486009961
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Camera/20    Zoom.unity
+  uploadId: 653658

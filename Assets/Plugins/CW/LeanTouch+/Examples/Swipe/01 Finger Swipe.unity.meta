@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aa92a39449f38404587b31844378f7a9
+timeCreated: 1502087250
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Swipe/01 Finger Swipe.unity
+  uploadId: 653658

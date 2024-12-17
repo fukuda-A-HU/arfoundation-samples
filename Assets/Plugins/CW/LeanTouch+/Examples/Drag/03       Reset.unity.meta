@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cbd81e3a39659074db24f96d075a78d2
+timeCreated: 1494979353
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Drag/03       Reset.unity
+  uploadId: 653658

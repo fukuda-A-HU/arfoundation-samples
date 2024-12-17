@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: Hover_Emote
+  m_EditorClassIdentifier: 
+  controls:
+  - name: Emote Stop
+    icon: {fileID: 0}
+    type: 102
+    parameter:
+      name: VRCEmote
+    value: 0
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Relax
+    icon: {fileID: 2800000, guid: 9a20b3a6641e1af4e95e058f361790cb, type: 3}
+    type: 102
+    parameter:
+      name: VRCEmote
+    value: 20
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: RelaxHightMode
+    icon: {fileID: 2800000, guid: 0ff9333af28b8224893850e22c95e496, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: d2b3da8b8a54af441808533b8f7fe178, type: 2}
+    subParameters: []
+    labels: []
+  - name: TurnandSpin
+    icon: {fileID: 2800000, guid: 9a20b3a6641e1af4e95e058f361790cb, type: 3}
+    type: 101
+    parameter:
+      name: VRCEmote
+    value: 21
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Login Logout
+    icon: {fileID: 2800000, guid: 9a20b3a6641e1af4e95e058f361790cb, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 255
+    style: 0
+    subMenu: {fileID: 11400000, guid: 00309f47018412c40a8777ca4f30e97b, type: 2}
+    subParameters: []
+    labels: []
+  - name: Mirror
+    icon: {fileID: 0}
+    type: 102
+    parameter:
+      name: EmoteMirror
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []

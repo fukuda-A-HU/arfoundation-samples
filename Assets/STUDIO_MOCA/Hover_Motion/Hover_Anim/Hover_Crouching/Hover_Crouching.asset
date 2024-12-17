@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!206 &20600000
+BlendTree:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hover_Crouching
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: c6c87da458f7b4746aba5c3536cd6d18, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: MovementZ
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 6a030eaa33bd4bd42a6754bfaf50bea5, type: 2}
+    m_Threshold: 0.33333334
+    m_Position: {x: 0, y: 1.78}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: VelocityX
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 6a030eaa33bd4bd42a6754bfaf50bea5, type: 2}
+    m_Threshold: 0.5
+    m_Position: {x: 0, y: 1.25}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: MovementZ
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 865411a4df5f7f54c8b9f8cf4dfbc38b, type: 2}
+    m_Threshold: 0.6666667
+    m_Position: {x: 0, y: -1.25}
+    m_TimeScale: -1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: MovementZ
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 78e4b899508e5cd4e90a7cfa96b722ff, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 1.25, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0.5
+    m_DirectBlendParameter: MovementZ
+    m_Mirror: 1
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 78e4b899508e5cd4e90a7cfa96b722ff, type: 2}
+    m_Threshold: 1.1666667
+    m_Position: {x: -1.25, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: MovementZ
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 78e4b899508e5cd4e90a7cfa96b722ff, type: 2}
+    m_Threshold: 1.3333335
+    m_Position: {x: 1.25, y: 1.25}
+    m_TimeScale: 1
+    m_CycleOffset: 0.5
+    m_DirectBlendParameter: VelocityX
+    m_Mirror: 1
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 78e4b899508e5cd4e90a7cfa96b722ff, type: 2}
+    m_Threshold: 1.5000002
+    m_Position: {x: -1.25, y: 1.25}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: VelocityX
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: bd33c37616290094e902ad2868b7f519, type: 2}
+    m_Threshold: 1.666667
+    m_Position: {x: 1.25, y: -1.25}
+    m_TimeScale: 1
+    m_CycleOffset: 0.5
+    m_DirectBlendParameter: VelocityX
+    m_Mirror: 1
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: bd33c37616290094e902ad2868b7f519, type: 2}
+    m_Threshold: 1.8333337
+    m_Position: {x: -1.25, y: -1.25}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: VelocityX
+    m_Mirror: 0
+  m_BlendParameter: VelocityX
+  m_BlendParameterY: VelocityZ
+  m_MinThreshold: 0
+  m_MaxThreshold: 1.8333337
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 2

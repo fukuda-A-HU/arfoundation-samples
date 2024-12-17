@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4608513f403d34253ab221fe8238a004
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250892
+  packageName: "AI Toolbox with ChatGPT, DALL\xB7E, Whisper, Gemini etc"
+  packageVersion: 6.6.0
+  assetPath: Assets/AI Toolbox/Samples/Runtime Usage/Shared Assets/CopyColorFromParent.cs
+  uploadId: 691884

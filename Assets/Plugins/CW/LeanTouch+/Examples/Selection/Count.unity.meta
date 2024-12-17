@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 69f2825afb59fca41ac65ed794e094ad
+timeCreated: 1475317153
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Selection/Count.unity
+  uploadId: 653658

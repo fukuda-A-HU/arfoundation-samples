@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a798f8a061883844380bc5869d998bb1
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232947
+  packageName: Ultimate Color Picker
+  packageVersion: 1.0
+  assetPath: Assets/FSGColorPicker/Examples/CubeColoringExample/Scenes/CubeColoringExample.unity
+  uploadId: 526839

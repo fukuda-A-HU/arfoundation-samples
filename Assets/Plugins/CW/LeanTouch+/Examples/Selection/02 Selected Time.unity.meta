@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7550078210a002048bfedde9f48ddcf3
+timeCreated: 1495129224
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Selection/02 Selected Time.unity
+  uploadId: 653658

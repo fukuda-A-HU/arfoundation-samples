@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8c33a8c42a09f8c469c9cb7c4205df79
+timeCreated: 1476919072
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Canvas/08 Drag To Spawn.unity
+  uploadId: 653658

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1b0b66de904aad6448712e71a8cf451f
+timeCreated: 1528864587
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Drag/19 DragRescale.unity
+  uploadId: 653658

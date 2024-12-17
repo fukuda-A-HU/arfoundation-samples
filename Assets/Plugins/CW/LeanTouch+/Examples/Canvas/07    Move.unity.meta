@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 59422eada13b00e4a89f0a6a8e1a6b3a
+timeCreated: 1484274451
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Canvas/07    Move.unity
+  uploadId: 653658

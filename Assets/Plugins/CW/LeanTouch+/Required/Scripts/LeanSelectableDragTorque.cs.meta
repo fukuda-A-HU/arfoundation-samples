@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 58e2d88c5894e3c42becf9b88d354fa7
+timeCreated: 1504571877
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Required/Scripts/LeanSelectableDragTorque.cs
+  uploadId: 653658

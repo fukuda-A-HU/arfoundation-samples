@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 740dfb01f6d51444b89080ad6f80a21b
+timeCreated: 1518740007
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/13 Translate Rigidbody2D.unity
+  uploadId: 653658

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0ec24ac2783c4c14d8a69d3da5047cf0
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250892
+  packageName: "AI Toolbox with ChatGPT, DALL\xB7E, Whisper, Gemini etc"
+  packageVersion: 6.6.0
+  assetPath: Assets/AI Toolbox/Samples/Runtime Usage/[Demo] AI Moderation/[Demo]
+    AI Moderation.unity
+  uploadId: 691884

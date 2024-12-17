@@ -1,0 +1,46 @@
+.selected {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: rgba(70, 70, 81, 0.5);
+}
+
+.custom-button {
+    min-width: 120px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left-color: #94989D;
+    border-right-color: #94989D;
+    border-top-color: #94989D;
+    border-bottom-color: #94989D;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.custom-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.label-text {
+    color: rgb(224, 224, 224);
+}
+
+.unity-label {
+    color: rgb(224, 224, 224);
+}
+
+.unity-popup-field .unity-label {
+    min-width: 60px;
+}
+
+.unity-text-field .unity-label {
+    min-width: 64px;
+}

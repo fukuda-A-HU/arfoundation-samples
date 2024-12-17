@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fb1b41c0eba48524e85b3b0fa93a5072
+timeCreated: 1513221164
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Selection/06    WithinRange.unity
+  uploadId: 653658

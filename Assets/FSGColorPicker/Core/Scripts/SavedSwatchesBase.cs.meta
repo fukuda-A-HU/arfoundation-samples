@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4b31a3bc470a1204390a705548756bfe
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232947
+  packageName: Ultimate Color Picker
+  packageVersion: 1.0
+  assetPath: Assets/FSGColorPicker/Core/Scripts/SavedSwatchesBase.cs
+  uploadId: 526839

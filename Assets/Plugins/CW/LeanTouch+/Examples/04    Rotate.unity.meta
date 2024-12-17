@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9d7599225eac4ac43b538a682ba1272c
+timeCreated: 1542413558
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/04    Rotate.unity
+  uploadId: 653658

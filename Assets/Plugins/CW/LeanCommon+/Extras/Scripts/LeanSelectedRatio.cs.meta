@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1f5574feebe021745b523266dd61bb9a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanCommon+/Extras/Scripts/LeanSelectedRatio.cs
+  uploadId: 653658

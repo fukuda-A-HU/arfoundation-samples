@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ff978dd699640884f854769f4691ccfd
+timeCreated: 1481026942
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/08    Axis.unity
+  uploadId: 653658

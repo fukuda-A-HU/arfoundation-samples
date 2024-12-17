@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bfc96b5311fd249f49b6ed36567d65d3
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250892
+  packageName: "AI Toolbox with ChatGPT, DALL\xB7E, Whisper, Gemini etc"
+  packageVersion: 6.6.0
+  assetPath: Assets/AI Toolbox/Samples/Runtime Usage/[Demo] Gemini/[Demo] Gemini.unity
+  uploadId: 691884

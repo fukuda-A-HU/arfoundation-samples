@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7cd3682983e89d443a97ad0d86d4ea1c
+timeCreated: 1524471558
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Canvas/04 Multi Update Canvas.unity
+  uploadId: 653658

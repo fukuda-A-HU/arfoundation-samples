@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 9bb9dfa143d1c43a887c29800eafed8d
+timeCreated: 1486846615
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 82881
+  packageName: Lunar Mobile Console - FREE
+  packageVersion: 1.8.4
+  assetPath: Assets/LunarConsole/Editor/LunarConsoleEditorAnalytics.cs
+  uploadId: 445083

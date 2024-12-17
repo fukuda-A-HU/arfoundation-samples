@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 03ae48b644886ec4aa728214cfe061e0
+timeCreated: 1504510829
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/GrabSpinThrow.unity
+  uploadId: 653658

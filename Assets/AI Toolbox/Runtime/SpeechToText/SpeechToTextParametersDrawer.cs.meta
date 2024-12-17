@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: a44d31ef76b34c6d85685685687b4752
+timeCreated: 1708538539
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250892
+  packageName: "AI Toolbox with ChatGPT, DALL\xB7E, Whisper, Gemini etc"
+  packageVersion: 6.6.0
+  assetPath: Assets/AI Toolbox/Runtime/SpeechToText/SpeechToTextParametersDrawer.cs
+  uploadId: 691884

@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: EmoteOtherMenu
+  m_EditorClassIdentifier: 
+  controls:
+  - name: Emote Stop
+    icon: {fileID: 0}
+    type: 102
+    parameter:
+      name: VRCEmote
+    value: 0
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: VRChat Emote
+    icon: {fileID: 0}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 0073fa11c283598408dde9d68012e578, type: 2}
+    subParameters: []
+    labels: []
+  - name: Extra Emote 1
+    icon: {fileID: 2800000, guid: a06282136d558c54aa15d533f163ff59, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 194aad46634845a47861b3b35d9f5771, type: 2}
+    subParameters: []
+    labels: []
+  - name: Extra Emote 2
+    icon: {fileID: 2800000, guid: a06282136d558c54aa15d533f163ff59, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 8b6079e4b5fa1c047845ce4361dcbdd7, type: 2}
+    subParameters: []
+    labels: []
+  - name: Extra Emote 3
+    icon: {fileID: 2800000, guid: a06282136d558c54aa15d533f163ff59, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: ff4a9203edbdc1d4d89e12e754fa8bad, type: 2}
+    subParameters: []
+    labels: []
+  - name: Mirror
+    icon: {fileID: 0}
+    type: 102
+    parameter:
+      name: EmoteMirror
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Hight Menu
+    icon: {fileID: 0}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 68932e5e9a0ef4c48b465981eadf61c4, type: 2}
+    subParameters: []
+    labels: []

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5aabd5b847222544598b318df2da51fb
+timeCreated: 1475031156
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Line/09 Target 2D.unity
+  uploadId: 653658

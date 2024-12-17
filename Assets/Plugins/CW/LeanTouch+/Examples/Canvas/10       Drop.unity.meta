@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c7b1d49c297051a4eb0442c296ce73c1
+timeCreated: 1476919072
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Canvas/10       Drop.unity
+  uploadId: 653658

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 561233624b3d66e438f8c7ee03a4f445
+timeCreated: 1486084540
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Constrain/02 Constrain To Box.unity
+  uploadId: 653658

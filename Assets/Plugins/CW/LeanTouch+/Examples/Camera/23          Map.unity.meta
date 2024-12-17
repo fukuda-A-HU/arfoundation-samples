@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 421eb2f56075d17429858206102c58d7
+timeCreated: 1526019808
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Camera/23          Map.unity
+  uploadId: 653658

@@ -70,7 +70,6 @@ MonoBehaviour:
       m_Calls: []
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
-  m_ForceDeprecatedInput: 1
   m_SelectInput:
     m_InputSourceMode: 2
     m_InputActionPerformed:
@@ -98,6 +97,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_ActivateInput:
@@ -127,12 +127,14 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_SelectActionTrigger: 1
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
   m_HideControllerOnSelect: 0
+  m_InputCompatibilityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -237,6 +239,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_UIScrollInput:
@@ -322,6 +325,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_ScaleOverTimeInput:
@@ -400,7 +404,7 @@ LineRenderer:
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.02
+    widthMultiplier: 0.01
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -696,7 +700,6 @@ MonoBehaviour:
       m_Calls: []
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
-  m_ForceDeprecatedInput: 1
   m_SelectInput:
     m_InputSourceMode: 2
     m_InputActionPerformed:
@@ -724,6 +727,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_ActivateInput:
@@ -753,12 +757,14 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_SelectActionTrigger: 1
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
   m_HideControllerOnSelect: 0
+  m_InputCompatibilityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -863,6 +869,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_UIScrollInput:
@@ -948,6 +955,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_ScaleOverTimeInput:
@@ -1026,7 +1034,7 @@ LineRenderer:
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.02
+    widthMultiplier: 0.01
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1407,7 +1415,6 @@ MonoBehaviour:
       m_Calls: []
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
-  m_ForceDeprecatedInput: 0
   m_SelectInput:
     m_InputSourceMode: 2
     m_InputActionPerformed:
@@ -1435,6 +1442,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_ActivateInput:
@@ -1464,12 +1472,14 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_SelectActionTrigger: 0
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
   m_HideControllerOnSelect: 0
+  m_InputCompatibilityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -1574,6 +1584,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_UIScrollInput:
@@ -1659,6 +1670,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_ScaleOverTimeInput:
@@ -2005,7 +2017,6 @@ MonoBehaviour:
       m_Calls: []
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
-  m_ForceDeprecatedInput: 1
   m_SelectInput:
     m_InputSourceMode: 2
     m_InputActionPerformed:
@@ -2033,6 +2044,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_ActivateInput:
@@ -2062,12 +2074,14 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_SelectActionTrigger: 1
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
   m_HideControllerOnSelect: 0
+  m_InputCompatibilityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -2616,7 +2630,6 @@ MonoBehaviour:
       m_Calls: []
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
-  m_ForceDeprecatedInput: 0
   m_SelectInput:
     m_InputSourceMode: 2
     m_InputActionPerformed:
@@ -2644,6 +2657,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_ActivateInput:
@@ -2673,12 +2687,14 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_SelectActionTrigger: 0
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
   m_HideControllerOnSelect: 0
+  m_InputCompatibilityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -2783,6 +2799,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_UIScrollInput:
@@ -2868,6 +2885,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_ScaleOverTimeInput:
@@ -3256,8 +3274,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -8270564778575511633, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
   m_SelectActionValue:
     m_UseReference: 1
     m_Action:
@@ -3269,8 +3286,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -8270564778575511633, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
   m_ActivateAction:
     m_UseReference: 1
     m_Action:
@@ -3479,7 +3495,6 @@ MonoBehaviour:
       m_Calls: []
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
-  m_ForceDeprecatedInput: 1
   m_SelectInput:
     m_InputSourceMode: 2
     m_InputActionPerformed:
@@ -3507,6 +3522,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_ActivateInput:
@@ -3536,12 +3552,14 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_SelectActionTrigger: 1
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
   m_HideControllerOnSelect: 0
+  m_InputCompatibilityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -3940,6 +3958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RayInteractor: {fileID: 8814323753852217079}
+  m_NearFarInteractor: {fileID: 0}
   m_TeleportInteractor: {fileID: 0}
   m_TeleportMode: {fileID: 0}
   m_TeleportModeCancel: {fileID: 0}
@@ -3949,6 +3968,7 @@ MonoBehaviour:
   m_UIScroll: {fileID: 0}
   m_SmoothMotionEnabled: 0
   m_SmoothTurnEnabled: 0
+  m_NearFarEnableTeleportDuringNearInteraction: 1
   m_UIScrollingEnabled: 1
   m_RayInteractorChanged:
     m_PersistentCalls:
@@ -4282,7 +4302,6 @@ MonoBehaviour:
       m_Calls: []
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
-  m_ForceDeprecatedInput: 0
   m_SelectInput:
     m_InputSourceMode: 2
     m_InputActionPerformed:
@@ -4310,6 +4329,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_ActivateInput:
@@ -4339,12 +4359,14 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_SelectActionTrigger: 0
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
   m_HideControllerOnSelect: 0
+  m_InputCompatibilityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -4449,6 +4471,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_UIScrollInput:
@@ -4534,6 +4557,7 @@ MonoBehaviour:
     m_ManualValue: 0
     m_ManualQueuePerformed: 0
     m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
     m_ManualQueueValue: 0
     m_ManualQueueTargetFrame: 0
   m_ScaleOverTimeInput:
@@ -4922,8 +4946,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -4084014799535200556, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
   m_SelectActionValue:
     m_UseReference: 1
     m_Action:
@@ -4935,8 +4958,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -4084014799535200556, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
   m_ActivateAction:
     m_UseReference: 1
     m_Action:
@@ -5348,12 +5370,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &8766024634641266082
 GameObject:
   m_ObjectHideFlags: 0
@@ -5440,6 +5462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RayInteractor: {fileID: 8783311969461025404}
+  m_NearFarInteractor: {fileID: 0}
   m_TeleportInteractor: {fileID: 0}
   m_TeleportMode: {fileID: 0}
   m_TeleportModeCancel: {fileID: 0}
@@ -5449,6 +5472,7 @@ MonoBehaviour:
   m_UIScroll: {fileID: 0}
   m_SmoothMotionEnabled: 0
   m_SmoothTurnEnabled: 0
+  m_NearFarEnableTeleportDuringNearInteraction: 1
   m_UIScrollingEnabled: 1
   m_RayInteractorChanged:
     m_PersistentCalls:

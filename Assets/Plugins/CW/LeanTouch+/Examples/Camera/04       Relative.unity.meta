@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b5f4d75f4364aa04f9e324da496fb1cf
+timeCreated: 1480639560
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Camera/04       Relative.unity
+  uploadId: 653658

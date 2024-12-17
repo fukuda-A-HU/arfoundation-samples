@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ec4cb4d4426288343a7faa44664ee660
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232947
+  packageName: Ultimate Color Picker
+  packageVersion: 1.0
+  assetPath: Assets/FSGColorPicker/Core/Scripts/ColorPicker.cs
+  uploadId: 526839

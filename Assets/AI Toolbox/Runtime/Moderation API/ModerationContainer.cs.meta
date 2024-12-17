@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: bc2a6106780b4b74b4eb03ee2d606388
+timeCreated: 1708120635
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250892
+  packageName: "AI Toolbox with ChatGPT, DALL\xB7E, Whisper, Gemini etc"
+  packageVersion: 6.6.0
+  assetPath: Assets/AI Toolbox/Runtime/Moderation API/ModerationContainer.cs
+  uploadId: 691884

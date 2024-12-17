@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dd0cd30911e9118438f7844a5bd4a1b0
+timeCreated: 1490412094
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/01 Finger Held.unity
+  uploadId: 653658

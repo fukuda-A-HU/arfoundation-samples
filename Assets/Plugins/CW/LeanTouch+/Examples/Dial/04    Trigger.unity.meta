@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 97d09ed943eb8024ba2fe9afdd8de1c9
+timeCreated: 1530844316
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Dial/04    Trigger.unity
+  uploadId: 653658

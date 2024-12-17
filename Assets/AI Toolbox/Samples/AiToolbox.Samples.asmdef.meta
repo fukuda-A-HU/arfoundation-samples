@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6cce31db2dc15a4429531da3cce7833b
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250892
+  packageName: "AI Toolbox with ChatGPT, DALL\xB7E, Whisper, Gemini etc"
+  packageVersion: 6.6.0
+  assetPath: Assets/AI Toolbox/Samples/AiToolbox.Samples.asmdef
+  uploadId: 691884

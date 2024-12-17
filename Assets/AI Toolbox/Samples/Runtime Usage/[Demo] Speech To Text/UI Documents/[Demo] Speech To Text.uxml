@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/AI%20Toolbox/Samples/Runtime%20Usage/Shared%20Assets/UI%20Toolkit/UnityThemes/Custom.uss?fileID=7433441132597879392&amp;guid=2969958fb5b4b114fa43d4b71c6343bc&amp;type=3#Custom" />
+    <ui:VisualElement name="controls" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); margin-left: 8px; margin-right: 8px; margin-top: 8px; margin-bottom: 8px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+        <ui:DropdownField label="Microphone" index="-1" name="mic-dropdown" />
+        <ui:VisualElement name="buttons" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;">
+            <ui:Button text="Record" name="start-stop-button" class="custom-button" style="max-height: 70%; justify-content: flex-start; align-self: center; font-size: 12px; -unity-font-style: normal; color: rgb(224, 224, 224); max-width: 33.33%; min-width: 80px;" />
+            <ui:Button text="Play" name="play-button" class="custom-button" style="max-height: 70%; justify-content: flex-start; align-self: center; font-size: 12px; -unity-font-style: normal; color: rgb(224, 224, 224); min-width: 80px; max-width: 33.33%;" />
+            <ui:Button text="Transcribe" display-tooltip-when-elided="true" name="transcribe-button" class="custom-button" style="transition-duration: 0.2s; transition-timing-function: ease-in-out; min-width: 80px; align-self: center; height: auto; max-height: 70%; font-size: 12px; -unity-font-style: normal; color: rgb(224, 224, 224); max-width: 33.33%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="body" style="flex-grow: 1; background-color: rgb(37, 41, 46); flex-direction: row; margin-left: 10px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-left-color: rgb(5, 6, 7); border-right-color: rgb(5, 6, 7); border-top-color: rgb(5, 6, 7); border-bottom-color: rgb(5, 6, 7); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 8px; border-bottom-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; margin-right: 10px; margin-top: 0; margin-bottom: 10px;">
+        <ui:VisualElement name="results-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+            <ui:Label tabindex="-1" text="Transcription" display-tooltip-when-elided="true" name="result-text" style="flex-shrink: 1; color: rgb(224, 224, 224); white-space: normal; -unity-paragraph-spacing: 35px; word-spacing: 0; -unity-text-outline-width: 0; font-size: 12px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

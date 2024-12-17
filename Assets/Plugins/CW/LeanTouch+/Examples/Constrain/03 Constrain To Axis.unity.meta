@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: efc3e4a2bfda044438090d893ff8c4dc
+timeCreated: 1486084540
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Constrain/03 Constrain To Axis.unity
+  uploadId: 653658

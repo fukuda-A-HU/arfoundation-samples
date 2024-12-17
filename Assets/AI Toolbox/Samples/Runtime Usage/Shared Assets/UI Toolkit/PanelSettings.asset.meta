@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 19c264d8171217b4b9da468da4ec7df1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250892
+  packageName: "AI Toolbox with ChatGPT, DALL\xB7E, Whisper, Gemini etc"
+  packageVersion: 6.6.0
+  assetPath: Assets/AI Toolbox/Samples/Runtime Usage/Shared Assets/UI Toolkit/PanelSettings.asset
+  uploadId: 691884

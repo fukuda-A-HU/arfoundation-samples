@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d7f25c98b43cffc4c801369c54de7200
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250892
+  packageName: "AI Toolbox with ChatGPT, DALL\xB7E, Whisper, Gemini etc"
+  packageVersion: 6.6.0
+  assetPath: Assets/AI Toolbox/Samples/Runtime Usage/[Demo] Text To Speech/[Demo]
+    Text To Speech.unity
+  uploadId: 691884

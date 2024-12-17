@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 493ebd3b9b48bff4380366e7f7d55d14
+timeCreated: 1475029742
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Camera/12    Snap.unity
+  uploadId: 653658

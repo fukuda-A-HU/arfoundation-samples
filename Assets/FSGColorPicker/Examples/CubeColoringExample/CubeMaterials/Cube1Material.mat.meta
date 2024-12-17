@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7e3eba19a92b6b44b8fb691e765f55df
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232947
+  packageName: Ultimate Color Picker
+  packageVersion: 1.0
+  assetPath: Assets/FSGColorPicker/Examples/CubeColoringExample/CubeMaterials/Cube1Material.mat
+  uploadId: 526839

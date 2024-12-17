@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7f8349f6a8df32b46bb68b2a62ea7b98
+timeCreated: 1475031156
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Line/10    Throw.unity
+  uploadId: 653658

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2ac1515a77f179840bf30c5cee39671e
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232947
+  packageName: Ultimate Color Picker
+  packageVersion: 1.0
+  assetPath: Assets/FSGColorPicker/Examples/ShapeColoringExample/Scenes/ShapeColoringExample.unity
+  uploadId: 526839

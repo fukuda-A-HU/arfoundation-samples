@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6d0acc00cc82d436b9d11446d2ddfef6
+timeCreated: 1438665349
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 82881
+  packageName: Lunar Mobile Console - FREE
+  packageVersion: 1.8.4
+  assetPath: Assets/LunarConsole/Scripts/LunarConsole.prefab
+  uploadId: 445083

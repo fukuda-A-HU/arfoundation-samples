@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 20d0aa85e3b7a6d47a63eb9067c98039
+timeCreated: 1494986029
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72356
+  packageName: Lean Touch+
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/CW/LeanTouch+/Examples/Camera/16 Freeflight.unity
+  uploadId: 653658
