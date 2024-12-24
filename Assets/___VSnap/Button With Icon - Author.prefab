@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: 5443696961666835230}
   - component: {fileID: 7417377940856222127}
   - component: {fileID: 2719802165934830738}
-  - component: {fileID: 4908611593434478894}
   m_Layer: 5
   m_Name: Button With Icon - Author
   m_TagString: Untagged
@@ -337,21 +336,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &4908611593434478894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4923268251705209380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66563494c59d2477eae2c0b133b91414, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  label: {fileID: 7139805075555540969}
-  authorName: 
-  button: {fileID: 2447765230281148492}
 --- !u!1 &9158661169652096842
 GameObject:
   m_ObjectHideFlags: 0
