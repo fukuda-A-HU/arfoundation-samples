@@ -346,6 +346,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4763384727138585527, guid: 6b34506a13d544bb083af52fe4cb1e25,
         type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763384727138585527, guid: 6b34506a13d544bb083af52fe4cb1e25,
+        type: 3}
       propertyPath: m_PixelsPerUnitMultiplier
       value: 1.5
       objectReference: {fileID: 0}

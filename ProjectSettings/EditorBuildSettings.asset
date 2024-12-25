@@ -140,45 +140,48 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ARKit/CameraExposure/CameraExposure.unity
     guid: 1e974247d62884f67a7300f149cb7b71
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ARKit/CameraWhiteBalance/CameraWhiteBalance.unity
     guid: d40e2b23f9374408887640800ce04e8a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ARKit/CameraFocus/CameraFocus.unity
     guid: 7c122b3bb54fd44be98332066a54c97f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Camera/ImageStabilization/ImageStabilization.unity
     guid: 8226f3835be3c46ce8a41c734ef3feb2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Camera/ExifData/ExifData.unity
     guid: 668735f787b9248c2bee5111449a40bf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VisualScripting/VS_SimpleAR/VS_SimpleAR.unity
     guid: fc598c11c6a3a42e7ae39f4319d4fb4b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VisualScripting/VS_GetTrackables/VS_GetTrackables.unity
     guid: 43a3bf9112387472d98302b0520a8a7f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VisualScripting/VS_GetTrackablesUserFacing/VS_GetTrackablesUserFacing.unity
     guid: 273e6fd77d23b42d9956aba7e5f35fca
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VisualScripting/VS_OnTrackablesChanged/VS_OnTrackablesChanged.unity
     guid: 93c05967a7724427d962fd9de9a585d1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VisualScripting/VS_OnTrackablesChangedUserFacing/VS_OnTrackablesChangedUserFacing.unity
     guid: d966c4d085949488799fa16be4c4455e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Meta/MetaSceneCapture.unity
     guid: 8d6a8fd41189d4105b00ec3d1b95330d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Meta/MetaDisplayRefreshRate.unity
     guid: 07970a1a9455f4309b8e99b1c88daa98
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BoundingBoxDetection/BoundingBoxes.unity
     guid: e5d8c18ab0c954fd4a7aee48dffe9836
-  - enabled: 1
+  - enabled: 0
     path: Assets/_VSnap/Scene/SimpleAR 1.unity
     guid: 3b9a4c1daf6804311b381d7ca19b5151
+  - enabled: 1
+    path: Assets/___VSnap/SimpleAR 3.unity
+    guid: 0b1cfea999f96460fadd638908b17e8d
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: c52d3bb36b4c86f47af54ab9c7a02589,
       type: 2}

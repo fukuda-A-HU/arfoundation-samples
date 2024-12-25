@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 3648204506359410274}
   - component: {fileID: 3825070798625602265}
   - component: {fileID: 3090228237418979893}
+  - component: {fileID: 8605340061150554617}
   m_Layer: 5
   m_Name: ScrollView - PosePanel
   m_TagString: Untagged
@@ -73,8 +74,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 30, y: 0}
-  m_SizeDelta: {x: -60, y: -3}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -3}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &286654765460697402
 CanvasRenderer:
@@ -98,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.2}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -157,6 +158,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
+--- !u!114 &8605340061150554617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6570149104221634431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66563494c59d2477eae2c0b133b91414, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  authorName: 
+  poseButtonParent: {fileID: 3264936770132503414}
+  button: {fileID: 0}
 --- !u!1 &8175537376250253652
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +244,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 1
-  m_CellSize: {x: 300, y: 160}
-  m_Spacing: {x: 30, y: 30}
+  m_CellSize: {x: 300, y: 190}
+  m_Spacing: {x: 10, y: 10}
   m_Constraint: 2
   m_ConstraintCount: 3
