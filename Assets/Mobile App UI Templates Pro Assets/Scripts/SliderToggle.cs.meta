@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c42f29fbe6bd2254283094a922981108
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 208314
+  packageName: Mobile App UI Template (PRO)
+  packageVersion: 2.2
+  assetPath: Assets/Mobile App UI Templates Pro Assets/Scripts/SliderToggle.cs
+  uploadId: 653757

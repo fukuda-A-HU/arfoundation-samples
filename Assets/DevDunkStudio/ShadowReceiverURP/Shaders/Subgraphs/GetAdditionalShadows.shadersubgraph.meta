@@ -11,7 +11,7 @@ ScriptedImporter:
 AssetOrigin:
   serializedVersion: 1
   productId: 228069
-  packageName: Shadow Receiver URP (Directional & Additional Light Shadows)
-  packageVersion: 4.0.0
+  packageName: Shadow Receiver URP (AR/MR Directional & Additional Light Shadows)
+  packageVersion: 5.0.1
   assetPath: Assets/DevDunkStudio/ShadowReceiverURP/Shaders/Subgraphs/GetAdditionalShadows.shadersubgraph
-  uploadId: 653336
+  uploadId: 699705

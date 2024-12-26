@@ -21,17 +21,17 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AdditionalShadowReceiver
-  m_Shader: {fileID: -6465566751694194690, guid: 444184815bc411543a9d260d26902711,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 0e59d6319206aa341bb5039f785cc8ad, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _SURFACE_TYPE_TRANSPARENT
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _USEADDITIONALLIGHTS
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap:
     RenderType: Transparent
   disabledShaderPasses:
@@ -132,6 +132,8 @@ Material:
     - _SrcBlend: 5
     - _Surface: 1
     - _Transparency: 0
+    - _USEADDITIONALLIGHTS: 1
+    - _USEMAINLIGHT: 0
     - _UseMainLight: 1
     - _WorkflowMode: 1
     - _ZTest: 4
@@ -140,12 +142,12 @@ Material:
     m_Colors:
     - Color_72bc1e57291a4e8dadc03f5e475acd62: {r: 0, g: 0, b: 0, a: 1}
     - _AdditionalShadowColor: {r: 0, g: 0, b: 0, a: 0.6313726}
-    - _Additional_Shadow_Color: {r: 0.9716981, g: 0, b: 0, a: 0.53333336}
+    - _Additional_Shadow_Color: {r: 0, g: 0, b: 0, a: 0.53333336}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MainLightShadowColor: {r: 0, g: 0, b: 0, a: 0.83137256}
-    - _Main_Shadow_Color: {r: 0, g: 0, b: 1, a: 0.62352943}
+    - _Main_Shadow_Color: {r: 0, g: 0, b: 0, a: 0.62352943}
     - _ShadowColor: {r: 0.1626023, g: 0.16311222, b: 0.16981128, a: 0.79607844}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Specular: {r: 1, g: 1, b: 1, a: 0}

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1496989eb49c400418359cf7e97ab38a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 208314
+  packageName: Mobile App UI Template (PRO)
+  packageVersion: 2.2
+  assetPath: Assets/Mobile App UI Templates Pro Assets/Editor/CreateUIWidget.cs
+  uploadId: 653757

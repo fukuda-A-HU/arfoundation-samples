@@ -16,4 +16,9 @@ public class AR : MonoBehaviour
     {
         session.gameObject.SetActive(value);
     }
+
+    public void isOnChange()
+    {
+        isOn.Value = !isOn.Value;
+    }
 }

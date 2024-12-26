@@ -14,7 +14,8 @@ public class ARPresenter : MonoBehaviour
 
         menuView.checkPlaneButton.onClick.AddListener(() =>
         {
-            ar.SetActive(!ar.isOn.Value);
+            Debug.Log("Check Plane Button Clicked");
+            ar.isOnChange();
         });
     }
 

@@ -24,8 +24,6 @@ public class CharaPoseManager : MonoBehaviour
 
         foreach (var clipGroup in poseObject.animationClipGroup)
         {
-            Debug.Log("Add PoseGroup: " + clipGroup.name);
-
             // clipGroup.nameがすでにposeDictionaryに存在する場合はスキップ
             if (pose.poseDictionary.ContainsKey(clipGroup.name))
             {
@@ -37,8 +35,6 @@ public class CharaPoseManager : MonoBehaviour
 
             foreach (var clip in clipGroup.animationClip)
             {
-                Debug.Log("Add Pose: " + clip.name);
-
                 // clip.nameがすでにposeGroupに存在する場合はスキップ
                 if (poseGroup.poseInfo.ContainsKey(clip.name))
                 {

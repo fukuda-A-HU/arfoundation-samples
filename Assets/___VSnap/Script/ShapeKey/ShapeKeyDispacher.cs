@@ -21,7 +21,7 @@ public class ShapeKeyDispacher : MonoBehaviour
 
     private void DispatchShapeKey(ShapeKeyView view)
     {
-       presenter.OnCreateShapeKeyView(view);
+       presenter.OnCreateShapeKeyView(view, shapeKey);
     }
 
 }

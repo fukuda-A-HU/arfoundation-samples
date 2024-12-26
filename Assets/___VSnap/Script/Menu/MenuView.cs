@@ -28,6 +28,7 @@ public class MenuView : MonoBehaviour
     [SerializeField] private RectTransform BasicTransform;
     [SerializeField] private RectTransform poseTransform;
     [SerializeField] private RectTransform advancedTransform;
+    [SerializeField] private RectTransform gridViewTransform;
 
     [Header("MainMenu Basic")]
     public Button resetARButton;
@@ -62,6 +63,7 @@ public class MenuView : MonoBehaviour
                 poseTransform.DOAnchorPosX(width, duration);
                 advancedTransform.DOAnchorPosX(width, duration);
                 BasicTransform.DOAnchorPosX(0, duration);
+                gridViewTransform.DOAnchorPosX(width, duration);
                 shutterButton.gameObject.SetActive(true);
                 break;
             case MenuMode.Pose:
@@ -70,6 +72,7 @@ public class MenuView : MonoBehaviour
                 poseTransform.DOAnchorPosX(0, duration);
                 BasicTransform.DOAnchorPosX(-width, duration);
                 advancedTransform.DOAnchorPosX(width, duration);
+                gridViewTransform.DOAnchorPosX(width, duration);
                 shutterButton.gameObject.SetActive(true);
                 break;
             case MenuMode.Advanced:
@@ -78,6 +81,7 @@ public class MenuView : MonoBehaviour
                 poseTransform.DOAnchorPosX(-width, duration);
                 BasicTransform.DOAnchorPosX(-width, duration);
                 advancedTransform.DOAnchorPosX(0, duration);
+                gridViewTransform.DOAnchorPosX(width, duration);
                 shutterButton.gameObject.SetActive(true);
                 break;
             case MenuMode.GridView:
@@ -86,6 +90,7 @@ public class MenuView : MonoBehaviour
                 poseTransform.DOAnchorPosX(-width, duration);
                 BasicTransform.DOAnchorPosX(-width, duration);
                 advancedTransform.DOAnchorPosX(-width, duration);
+                gridViewTransform.DOAnchorPosX(0, duration);
                 shutterButton.gameObject.SetActive(true);
                 break;
             case MenuMode.PlaceChara:
@@ -94,6 +99,7 @@ public class MenuView : MonoBehaviour
                 poseTransform.DOAnchorPosX(width, duration);
                 BasicTransform.DOAnchorPosX(width, duration);
                 advancedTransform.DOAnchorPosX(width, duration);
+                gridViewTransform.DOAnchorPosX(width, duration);
                 shutterButton.gameObject.SetActive(false);
                 break;
         }

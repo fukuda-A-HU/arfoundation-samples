@@ -7,7 +7,11 @@
             "m_Id": "f4fe710f186c4a878003eb3af86d1c40"
         }
     ],
-    "m_Keywords": [],
+    "m_Keywords": [
+        {
+            "m_Id": "65db40734aa04efc9c0fe8602563db58"
+        }
+    ],
     "m_Dropdowns": [],
     "m_CategoryData": [
         {
@@ -132,6 +136,7 @@
     "m_OutputNode": {
         "m_Id": "a568634ee8124ca3a001ac347ca6ac3e"
     },
+    "m_SubDatas": [],
     "m_ActiveTargets": []
 }
 
@@ -184,6 +189,7 @@
     "synonyms": [],
     "m_Precision": 0,
     "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
@@ -245,6 +251,47 @@
 
 {
     "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.ShaderKeyword",
+    "m_ObjectId": "65db40734aa04efc9c0fe8602563db58",
+    "m_Guid": {
+        "m_GuidSerialized": "e1265515-9af6-4bc5-9bda-472fc802983b"
+    },
+    "m_Name": "Shadow Settings",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Shadow Settings",
+    "m_DefaultReferenceName": "_SHADOW_SETTINGS",
+    "m_OverrideReferenceName": "_MAIN_LIGHT",
+    "m_GeneratePropertyBlock": false,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_KeywordType": 1,
+    "m_KeywordDefinition": 1,
+    "m_KeywordScope": 1,
+    "m_KeywordStages": 2,
+    "m_Entries": [
+        {
+            "id": 4,
+            "displayName": "Shadows",
+            "referenceName": "SHADOWS"
+        },
+        {
+            "id": 1,
+            "displayName": "Shadows Cascade",
+            "referenceName": "SHADOWS_CASCADE"
+        },
+        {
+            "id": 3,
+            "displayName": "Shadows screen",
+            "referenceName": "SHADOWS_SCREEN"
+        }
+    ],
+    "m_Value": 0,
+    "m_IsEditable": true
+}
+
+{
+    "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.CustomFunctionNode",
     "m_ObjectId": "a0a355fdbf0843de9ffa21c11b51a4dd",
     "m_Group": {
@@ -272,6 +319,7 @@
     "synonyms": [],
     "m_Precision": 3,
     "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
@@ -317,6 +365,7 @@
     "synonyms": [],
     "m_Precision": 0,
     "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
@@ -349,6 +398,7 @@
     "synonyms": [],
     "m_Precision": 0,
     "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
@@ -444,6 +494,7 @@
     "synonyms": [],
     "m_Precision": 3,
     "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
     "m_PreviewMode": 2,
     "m_CustomColors": {
         "m_SerializableColors": []
@@ -508,6 +559,9 @@
     "m_ChildObjectList": [
         {
             "m_Id": "f4fe710f186c4a878003eb3af86d1c40"
+        },
+        {
+            "m_Id": "65db40734aa04efc9c0fe8602563db58"
         }
     ]
 }
@@ -527,6 +581,7 @@
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": true,
     "m_CustomSlotLabel": "Position",
+    "m_DismissedVersion": 0,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,

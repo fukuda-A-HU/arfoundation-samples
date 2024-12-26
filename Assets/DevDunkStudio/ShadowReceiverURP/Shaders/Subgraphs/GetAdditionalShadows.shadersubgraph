@@ -13,7 +13,14 @@
             "m_Id": "0f0d45b7df144c06b9c0affaa4700a0a"
         }
     ],
-    "m_Keywords": [],
+    "m_Keywords": [
+        {
+            "m_Id": "623091b972054347a14591fe1e966f05"
+        },
+        {
+            "m_Id": "c002aca5d05a4a44b0d0906e1066f0a6"
+        }
+    ],
     "m_Dropdowns": [],
     "m_CategoryData": [
         {
@@ -220,6 +227,7 @@
     "m_OutputNode": {
         "m_Id": "c36052478e8345aebd48ab42e2085337"
     },
+    "m_SubDatas": [],
     "m_ActiveTargets": []
 }
 
@@ -470,6 +478,31 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.ShaderKeyword",
+    "m_ObjectId": "623091b972054347a14591fe1e966f05",
+    "m_Guid": {
+        "m_GuidSerialized": "3bef45b8-6886-4176-9e1e-493c50b68f6e"
+    },
+    "m_Name": "Additional Light Shadows",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Additional Light Shadows",
+    "m_DefaultReferenceName": "_ADDITIONAL_LIGHT_SHADOWS",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": false,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_KeywordType": 0,
+    "m_KeywordDefinition": 1,
+    "m_KeywordScope": 1,
+    "m_KeywordStages": 2,
+    "m_Entries": [],
+    "m_Value": 1,
+    "m_IsEditable": true
 }
 
 {
@@ -768,6 +801,31 @@
 }
 
 {
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.ShaderKeyword",
+    "m_ObjectId": "c002aca5d05a4a44b0d0906e1066f0a6",
+    "m_Guid": {
+        "m_GuidSerialized": "5640d541-07f6-422e-a0bf-eabc903d1d3d"
+    },
+    "m_Name": "Forward+",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Forward+",
+    "m_DefaultReferenceName": "_FORWARD",
+    "m_OverrideReferenceName": "_FORWARD_PLUS",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_KeywordType": 0,
+    "m_KeywordDefinition": 1,
+    "m_KeywordScope": 1,
+    "m_KeywordStages": 2,
+    "m_Entries": [],
+    "m_Value": 1,
+    "m_IsEditable": true
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SubGraphOutputNode",
     "m_ObjectId": "c36052478e8345aebd48ab42e2085337",
@@ -940,6 +998,12 @@
         },
         {
             "m_Id": "0f0d45b7df144c06b9c0affaa4700a0a"
+        },
+        {
+            "m_Id": "623091b972054347a14591fe1e966f05"
+        },
+        {
+            "m_Id": "c002aca5d05a4a44b0d0906e1066f0a6"
         }
     ]
 }

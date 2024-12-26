@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 50ba409ea3ac74e3b9b053a1ab7088c7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 228069
+  packageName: Shadow Receiver URP (AR/MR Directional & Additional Light Shadows)
+  packageVersion: 5.0.1
+  assetPath: Assets/DevDunkStudio/ShadowReceiverURP/Samples/Materials/ShadowReceiverDirectional.mat
+  uploadId: 699705

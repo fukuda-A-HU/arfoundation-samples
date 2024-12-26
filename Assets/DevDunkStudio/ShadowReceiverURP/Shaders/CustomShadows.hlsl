@@ -44,7 +44,6 @@ SOFTWARE. */
 			#undef REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR
 		#endif
 	#endif
-
 	#if UNITY_VERSION < 202220
 	/*
 	GetMeshRenderingLayer() is only available in 2022.2+
@@ -55,46 +54,53 @@ SOFTWARE. */
 	}
 	#endif
 
+
+    // This function gets additional light data and calculates realtime shadows
+    Light GetAdditionalLightCustom(int pixelLightIndex, float3 worldPosition) {
+        // Convert the pixel light index to the light data index
+        #if USE_FORWARD_PLUS
+            int lightIndex = pixelLightIndex;
+        #else
+            int lightIndex = GetPerObjectLightIndex(pixelLightIndex);
+        #endif
+        // Call the URP additional light algorithm. This will not calculate shadows, since we don't pass a shadow mask value
+        Light light = GetAdditionalPerObjectLight(lightIndex, worldPosition);
+        // Manually set the shadow attenuation by calculating realtime shadows
+        light.shadowAttenuation = AdditionalLightRealtimeShadow(lightIndex, worldPosition, light.direction);
+        return light;
+    }
+
 half GetMainShadow(float3 WorldPos){
-	#if defined(_MAIN_LIGHT_SHADOWS_SCREEN) && !defined(_SURFACE_TYPE_TRANSPARENT)
-		float4 shadowCoord = ComputeScreenPos(TransformWorldToHClip(WorldPos));
-	#else
-		float4 shadowCoord = TransformWorldToShadowCoord(WorldPos);
-	#endif
-	return MainLightShadow(shadowCoord, WorldPos, half4(1,1,1,1), _MainLightOcclusionProbes);
+	
+	float4 shadowCoord = TransformWorldToShadowCoord(WorldPos);
+    Light mainLight = GetMainLight(shadowCoord);
+    return mainLight.shadowAttenuation;
+
 }
 
 half GetMainShadow(half3 WorldPos){
-	#if defined(_MAIN_LIGHT_SHADOWS_SCREEN) && !defined(_SURFACE_TYPE_TRANSPARENT)
-		half4 shadowCoord = ComputeScreenPos(TransformWorldToHClip(WorldPos));
-	#else
-		half4 shadowCoord = TransformWorldToShadowCoord(WorldPos);
-	#endif
-	return MainLightShadow(shadowCoord, WorldPos, half4(1,1,1,1), _MainLightOcclusionProbes);
+    half4 shadowCoord = (half4) TransformWorldToShadowCoord(WorldPos);
+    Light mainLight = GetMainLight(shadowCoord);
+    return (half) mainLight.shadowAttenuation;
 }
 
 float GetAdditionalShadow(float3 WorldPosition, float3 Normal, half alpha){
 	float ShadowAtten = 0;
 	half one = half(1);
-	half4 shadowMask = half4(one,one,one,one);
 
 	uint pixelLightCount = GetAdditionalLightsCount();
-	uint meshRenderingLayers = GetMeshRenderingLayer();
 
-	// For Foward+ the LIGHT_LOOP_BEGIN macro will use inputData.normalizedScreenSpaceUV, inputData.positionWS, so create that:
-	InputData inputData = (InputData)0;
-	float4 screenPos = ComputeScreenPos(TransformWorldToHClip(WorldPosition));
-	inputData.normalizedScreenSpaceUV = screenPos.xy / screenPos.w;
-	inputData.positionWS = WorldPosition;
-
-	LIGHT_LOOP_BEGIN(pixelLightCount)
-		Light light = GetAdditionalLight(lightIndex, WorldPosition, shadowMask);
-	#ifdef _LIGHT_LAYERS
-	if (IsMatchingLightLayer(light.layerMask, meshRenderingLayers))
+	#if USE_FORWARD_PLUS
+		// for Foward+ LIGHT_LOOP_BEGIN macro uses inputData.normalizedScreenSpaceUV and inputData.positionWS
+		InputData inputData = (InputData)0;
+		float4 screenPos = ComputeScreenPos(TransformWorldToHClip(WorldPosition));
+		inputData.normalizedScreenSpaceUV = screenPos.xy / screenPos.w;
+		inputData.positionWS = WorldPosition;
 	#endif
-		{
-			ShadowAtten += (one-light.shadowAttenuation) * light.distanceAttenuation * length(light.color) * alpha;
-		}
+	
+	LIGHT_LOOP_BEGIN(pixelLightCount)
+		Light light = GetAdditionalLightCustom(lightIndex, WorldPosition);
+		ShadowAtten += (one-light.shadowAttenuation) * light.distanceAttenuation * length(light.color) * alpha;
 	LIGHT_LOOP_END
 
 	return ShadowAtten;
@@ -103,25 +109,20 @@ float GetAdditionalShadow(float3 WorldPosition, float3 Normal, half alpha){
 half GetAdditionalShadow(half3 WorldPosition, half3 Normal, half alpha){
 	half ShadowAtten = half(0);
 	half one = half(1);
-	half4 shadowMask = half4(one,one,one,one);
 
 	uint pixelLightCount = GetAdditionalLightsCount();
-	uint meshRenderingLayers = GetMeshRenderingLayer();
 
-	// For Foward+ the LIGHT_LOOP_BEGIN macro will use inputData.normalizedScreenSpaceUV, inputData.positionWS, so create that:
-	InputData inputData = (InputData)0;
-	half4 screenPos = ComputeScreenPos(TransformWorldToHClip(WorldPosition));
-	inputData.normalizedScreenSpaceUV = screenPos.xy / screenPos.w;
-	inputData.positionWS = WorldPosition;
+	#if USE_FORWARD_PLUS
+		// for Foward+ LIGHT_LOOP_BEGIN macro uses inputData.normalizedScreenSpaceUV and inputData.positionWS
+		InputData inputData = (InputData)0;
+		float4 screenPos = ComputeScreenPos(TransformWorldToHClip(WorldPosition));
+		inputData.normalizedScreenSpaceUV = screenPos.xy / screenPos.w;
+		inputData.positionWS = WorldPosition;
+	#endif
 
 	LIGHT_LOOP_BEGIN(pixelLightCount)
-		Light light = GetAdditionalLight(lightIndex, WorldPosition, shadowMask);
-	#ifdef _LIGHT_LAYERS
-		if (IsMatchingLightLayer(light.layerMask, meshRenderingLayers))
-	#endif
-		{
-			ShadowAtten += (one-light.shadowAttenuation) * light.distanceAttenuation * length(light.color) * alpha;
-		}
+		Light light = GetAdditionalLightCustom(lightIndex, WorldPosition);
+		ShadowAtten += (one-light.shadowAttenuation) * light.distanceAttenuation * length(light.color) * alpha;
 	LIGHT_LOOP_END
 
 	return ShadowAtten;
@@ -131,7 +132,7 @@ half GetAdditionalShadow(half3 WorldPosition, half3 Normal, half alpha){
 //Samples the Shadowmap for the Main Light, based on the World Position passed in. (Position node)
 void MainLightShadows_float (float3 WorldPos, out half ShadowAtten){
 	#ifdef SHADERGRAPH_PREVIEW
-		ShadowAtten = 1;
+		ShadowAtten = (half)1;
 	#else
 		ShadowAtten = GetMainShadow(WorldPos);
 	#endif
@@ -140,7 +141,7 @@ void MainLightShadows_float (float3 WorldPos, out half ShadowAtten){
 //Samples the Shadowmap for the Main Light, based on the World Position passed in. (Position node)
 void MainLightShadows_half (half3 WorldPos, out half ShadowAtten){
 	#ifdef SHADERGRAPH_PREVIEW
-		ShadowAtten = 1;
+		ShadowAtten = (half)1;
 	#else
 		ShadowAtten = GetMainShadow(WorldPos);
 	#endif
@@ -148,7 +149,7 @@ void MainLightShadows_half (half3 WorldPos, out half ShadowAtten){
 
 void AdditionalShadows_float (float3 WorldPosition, float3 Normal, half alpha, out float ShadowAtten){
 	#ifdef SHADERGRAPH_PREVIEW
-		ShadowAtten = 1;
+		ShadowAtten = (half)1;
 	#else
 		ShadowAtten = GetAdditionalShadow(WorldPosition, Normal, alpha);
 	#endif
@@ -156,7 +157,7 @@ void AdditionalShadows_float (float3 WorldPosition, float3 Normal, half alpha, o
 
 void AdditionalShadows_half (half3 WorldPosition, half3 Normal, half alpha, out half ShadowAtten){
 	#ifdef SHADERGRAPH_PREVIEW
-		ShadowAtten = 1;
+		ShadowAtten = (half)1;
 	#else
 		ShadowAtten = GetAdditionalShadow(WorldPosition, Normal, alpha);
 	#endif

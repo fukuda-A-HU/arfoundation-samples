@@ -10,17 +10,18 @@ public class ShapeKey : MonoBehaviour
     public ObservableDictionary<int, SkinnedMeshRenderer> renderers = new ObservableDictionary<int, SkinnedMeshRenderer>();
 
     // 変更時に通知するため、ObservableDictionaryによってWeightを管理
-    public ObservableDictionary<int, ObservableDictionary<int, float>> shapeKeyValues = new ObservableDictionary<int, ObservableDictionary<int, float>>();
+    public ObservableDictionary<int, ObservableDictionary<int, ReactiveProperty<float>>> shapeKeyValues = new ObservableDictionary<int, ObservableDictionary<int, ReactiveProperty<float>>>();
 
+    public SerializableReactiveProperty<int[]> selectedIDAndIndex = new SerializableReactiveProperty<int[]>(new int[] { -1, -1 });
 
     public void AddRenderer(SkinnedMeshRenderer renderer)
     {
         renderers.Add(renderer.GetInstanceID(), renderer);
     }
 
-    public void SetBlendShapeWeight(int rendererInstanceID, int index, float value)
+    public void SetBlendShapeWeight(float value)
     {
-        renderers[rendererInstanceID].SetBlendShapeWeight(index, value);
+        shapeKeyValues[selectedIDAndIndex.Value[0]][selectedIDAndIndex.Value[1]].Value = value;
     }
 
     public string GetRendererObjName(int rendererInstanceID)
@@ -38,10 +39,16 @@ public class ShapeKey : MonoBehaviour
         // Rendererが追加された時の処理
         renderers.ObserveAdd().Subscribe(renderer =>
         {
-            var shapeKeyValue = new ObservableDictionary<int, float>();
+            var shapeKeyValue = new ObservableDictionary<int, ReactiveProperty<float>>();
             for (int i = 0; i < renderer.Value.Value.sharedMesh.blendShapeCount; i++)
             {
-                shapeKeyValue.Add(i, renderer.Value.Value.GetBlendShapeWeight(i));
+                shapeKeyValue.Add(i, new ReactiveProperty<float>(renderer.Value.Value.GetBlendShapeWeight(i)));
+
+                // ReactivePropertyの値が変更された時にRendererのWeightを変更
+                shapeKeyValue[i].Subscribe(value =>
+                {
+                    renderer.Value.Value.SetBlendShapeWeight(selectedIDAndIndex.Value[1], value);
+                }).AddTo(this);
             }
 
             shapeKeyValues.Add(renderer.Value.Key, shapeKeyValue);
@@ -63,7 +70,7 @@ public class ShapeKey : MonoBehaviour
             Debug.Log("Renderer : " + renderer.Value.gameObject.name);
             foreach (var shapeKeyValue in shapeKeyValues[renderer.Value.GetInstanceID()])
             {
-                Debug.Log("ShapeKey : " + shapeKeyValue.Key + " : " + shapeKeyValue.Value);
+                Debug.Log("ShapeKey : " + shapeKeyValue.Key + " : " + shapeKeyValue.Value.Value);
             }
         }
     }

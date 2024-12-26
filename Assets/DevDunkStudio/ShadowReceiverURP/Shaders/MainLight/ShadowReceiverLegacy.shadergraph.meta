@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0a4fb956085e1483c9f45994ceaf2d4d
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 228069
+  packageName: Shadow Receiver URP (AR/MR Directional & Additional Light Shadows)
+  packageVersion: 5.0.1
+  assetPath: Assets/DevDunkStudio/ShadowReceiverURP/Shaders/MainLight/ShadowReceiverLegacy.shadergraph
+  uploadId: 699705

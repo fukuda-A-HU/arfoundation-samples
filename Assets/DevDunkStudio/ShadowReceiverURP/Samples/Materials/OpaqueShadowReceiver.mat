@@ -21,22 +21,21 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: OpaqueShadowReceiver
-  m_Shader: {fileID: -6465566751694194690, guid: a9719fdff057f804ab66c29cca14b4e7,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 0e59d6319206aa341bb5039f785cc8ad, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _SURFACE_TYPE_TRANSPARENT
-  m_InvalidKeywords: []
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _USEADDITIONALLIGHTS
+  - _USEMAINLIGHT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 2000
   stringTagMap:
-    RenderType: Transparent
+    RenderType: Opaque
   disabledShaderPasses:
   - SHADOWCASTER
-  - DepthOnly
   - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
@@ -112,7 +111,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DstBlend: 10
+    - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -126,18 +125,21 @@ Material:
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _SrcBlend: 5
-    - _Surface: 1
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _USEADDITIONALLIGHTS: 1
+    - _USEMAINLIGHT: 1
     - _WorkflowMode: 1
     - _ZTest: 4
-    - _ZWrite: 0
+    - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - Color_72bc1e57291a4e8dadc03f5e475acd62: {r: 0.21698105, g: 0.21698105, b: 0.21698105,
-        a: 1}
+    - Color_72bc1e57291a4e8dadc03f5e475acd62: {r: 0.21698105, g: 0.21698105, b: 0.21698105, a: 1}
+    - _Additional_Shadow_Color: {r: 0.09433959, g: 0.08499462, b: 0.08499462, a: 0.8862745}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Main_Shadow_Color: {r: 0, g: 0, b: 0.07058821, a: 0.772549}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

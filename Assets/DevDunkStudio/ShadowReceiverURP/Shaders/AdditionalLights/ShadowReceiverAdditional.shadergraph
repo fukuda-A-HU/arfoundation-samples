@@ -18,7 +18,7 @@
             "m_Id": "e7ed7c608d0748e49f4ffcdaf36e955c"
         },
         {
-            "m_Id": "64b07edb69ad49b79f48e410cd913ad4"
+            "m_Id": "ca4b0df3e12847fc81825078328a7db4"
         }
     ],
     "m_Dropdowns": [],
@@ -174,12 +174,13 @@
         },
         "preventRotation": false
     },
-    "m_Path": "Shadow Receiver URP",
+    "m_Path": "Hidden/Shadow Receiver URP",
     "m_GraphPrecision": 2,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": ""
     },
+    "m_SubDatas": [],
     "m_ActiveTargets": [
         {
             "m_Id": "6dcbf8264c8a435b8a1ede85e986670b"
@@ -528,52 +529,6 @@
 }
 
 {
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.ShaderKeyword",
-    "m_ObjectId": "64b07edb69ad49b79f48e410cd913ad4",
-    "m_Guid": {
-        "m_GuidSerialized": "cc5dd179-1270-423c-a6df-fddfca34219d"
-    },
-    "m_Name": "Soft Shadows",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Soft Shadows",
-    "m_DefaultReferenceName": "_SOFT_SHADOWS",
-    "m_OverrideReferenceName": "_SHADOWS",
-    "m_GeneratePropertyBlock": false,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_DismissedVersion": 0,
-    "m_KeywordType": 1,
-    "m_KeywordDefinition": 1,
-    "m_KeywordScope": 1,
-    "m_KeywordStages": 2,
-    "m_Entries": [
-        {
-            "id": 5,
-            "displayName": "SOFT",
-            "referenceName": "SOFT"
-        },
-        {
-            "id": 3,
-            "displayName": "SOFT_LOW",
-            "referenceName": "SOFT_LOW"
-        },
-        {
-            "id": 1,
-            "displayName": "SOFT_MEDIUM",
-            "referenceName": "SOFT_MEDIUM"
-        },
-        {
-            "id": 2,
-            "displayName": "SOFT_HIGH",
-            "referenceName": "SOFT_HIGH"
-        }
-    ],
-    "m_Value": 0,
-    "m_IsEditable": true
-}
-
-{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "6c840d07941b4aada7156a4aaf6d625d",
@@ -762,7 +717,7 @@
             "m_Id": "413660617d5a42f5b611b9a590731353"
         },
         {
-            "m_Id": "64b07edb69ad49b79f48e410cd913ad4"
+            "m_Id": "ca4b0df3e12847fc81825078328a7db4"
         }
     ]
 }
@@ -908,6 +863,57 @@
         "z": 0.0,
         "w": 0.0
     }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.ShaderKeyword",
+    "m_ObjectId": "ca4b0df3e12847fc81825078328a7db4",
+    "m_Guid": {
+        "m_GuidSerialized": "e85361dd-7ce8-48d8-a45c-1942bccfabac"
+    },
+    "m_Name": "Soft Shadows",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Soft Shadows",
+    "m_DefaultReferenceName": "_SOFT_SHADOWS",
+    "m_OverrideReferenceName": "_SHADOWS",
+    "m_GeneratePropertyBlock": false,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_KeywordType": 1,
+    "m_KeywordDefinition": 1,
+    "m_KeywordScope": 1,
+    "m_KeywordStages": 2,
+    "m_Entries": [
+        {
+            "id": 3,
+            "displayName": "off",
+            "referenceName": "OFF"
+        },
+        {
+            "id": 5,
+            "displayName": "soft",
+            "referenceName": "SOFT"
+        },
+        {
+            "id": 4,
+            "displayName": "soft low",
+            "referenceName": "SOFT_LOW"
+        },
+        {
+            "id": 1,
+            "displayName": "soft medium",
+            "referenceName": "SOFT_MEDIUM"
+        },
+        {
+            "id": 2,
+            "displayName": "soft high",
+            "referenceName": "SOFT_HIGH"
+        }
+    ],
+    "m_Value": 1,
+    "m_IsEditable": true
 }
 
 {

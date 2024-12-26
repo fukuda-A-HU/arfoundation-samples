@@ -9,6 +9,8 @@ public class ShapeKeyManager : MonoBehaviour
     public ObservableList<ShapeKeyView> shapeKeyViews = new ObservableList<ShapeKeyView>();
     [SerializeField] private GameObject sliderPrefab;
     [SerializeField] private RectTransform sliderParent;
+    [SerializeField] private Button buttonPrefab;
+    [SerializeField] private RectTransform buttonParent;
 
     [SerializeField] private ShapeKey shapeKeyComponent;
 
@@ -21,13 +23,12 @@ public class ShapeKeyManager : MonoBehaviour
             foreach (var shapeKey in shapeKeyValue.Value.Value)
             {
                 var shapeKeyName = shapeKeyComponent.GetShapeKeyName(shapeKeyValue.Value.Key, shapeKey.Key);
-                var view = Instantiate(sliderPrefab, sliderParent).GetComponent<ShapeKeyView>();
-                Debug.Log("add ShapeKey : " + shapeKeyName);
+                // var view = Instantiate(sliderPrefab, sliderParent).GetComponent<ShapeKeyView>();
+                var view = Instantiate(buttonPrefab, buttonParent).GetComponent<ShapeKeyView>();
+                // Debug.Log("add ShapeKey : " + shapeKeyName);
                 view.SetName(rendererName, shapeKeyName);
                 view.rendererInstanceID = shapeKeyValue.Value.Key;
                 view.shapeKeyIndex = shapeKey.Key;
-                view.MaxValue = 100;
-                view.MinValue = 0;
                 shapeKeyViews.Add(view);
             }
         }).AddTo(this);
