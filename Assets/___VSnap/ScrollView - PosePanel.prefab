@@ -170,6 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66563494c59d2477eae2c0b133b91414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  basicColor: {r: 0.050980393, g: 0.54901963, b: 0.89411765, a: 1}
+  SelectedColor: {r: 0.55108577, g: 0.7605322, b: 0.9056604, a: 1}
   authorName: 
   poseButtonParent: {fileID: 3264936770132503414}
   button: {fileID: 0}

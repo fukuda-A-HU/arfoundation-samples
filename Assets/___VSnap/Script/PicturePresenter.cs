@@ -13,7 +13,7 @@ public class PicturePresenter : MonoBehaviour
 
         picture.isPreviewing.Subscribe(isPreviewing =>
         {
-            view.previewImageParent.gameObject.SetActive(isPreviewing);
+            view.SetPreview(isPreviewing);
         });
 
         picture.pictureTexture.Subscribe(texture =>

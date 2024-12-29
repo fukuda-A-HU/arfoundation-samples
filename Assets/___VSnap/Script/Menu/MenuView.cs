@@ -10,6 +10,9 @@ using TMPro;
 
 public class MenuView : MonoBehaviour
 {
+    [Header("UI Color")]
+    [SerializeField] private Color basicColor;
+    [SerializeField] private Color SelectedColor;
     [Header("Mode Switch Swipe")]
     public LeanFingerSwipe leftSwipe;
     public LeanFingerSwipe rightSwipe;
@@ -47,6 +50,18 @@ public class MenuView : MonoBehaviour
     public GameObject colorPanel;
     public GameObject ShapeKeyPanel;
     public GameObject gazePanel;
+
+    public void SetCheckPlane(bool isCheck)
+    {
+        if (isCheck)
+        {
+            checkPlaneButton.GetComponent<Image>().color = SelectedColor;
+        }
+        else
+        {
+            checkPlaneButton.GetComponent<Image>().color = basicColor;
+        }
+    }
 
 
     public void SetMode(MenuMode mode)

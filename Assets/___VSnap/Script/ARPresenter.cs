@@ -1,4 +1,5 @@
 using UnityEngine;
+using R3;
 
 public class ARPresenter : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class ARPresenter : MonoBehaviour
         {
             Debug.Log("Check Plane Button Clicked");
             ar.isOnChange();
+        });
+
+        ar.isOn.Subscribe(x =>
+        {
+            menuView.SetCheckPlane(x);
         });
     }
 

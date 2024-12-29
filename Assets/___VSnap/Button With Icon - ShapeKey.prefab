@@ -351,6 +351,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 7879387219505005093}
   text: {fileID: 6538943343533052148}
+  maxColor: {r: 0.36164224, g: 0.8584906, b: 0.24701849, a: 1}
+  minColor: {r: 0.7921569, g: 0.4253093, b: 0.22745097, a: 1}
   rendererInstanceID: 0
   shapeKeyIndex: 0
 --- !u!1 &8807282152864202416

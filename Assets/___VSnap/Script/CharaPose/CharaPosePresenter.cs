@@ -17,6 +17,17 @@ public class CharaPosePresenter : MonoBehaviour
         });
 
         // Model -> View
+        pose.poseNameInfo.Subscribe(x =>
+        {
+            if (x.authorName == poseView.authorName && x.poseName == poseView.poseName)
+            {
+                poseView.SetSelected(true);
+            }
+            else
+            {
+                poseView.SetSelected(false);
+            }
+        });
     }
 
     public void OnCreateAuthorView(CharaPose pose, AuthorView authorView)
@@ -28,5 +39,16 @@ public class CharaPosePresenter : MonoBehaviour
         });
 
         // Model -> View
+        pose.selectedAuthor.Subscribe(x =>
+        {
+            if (x == authorView.authorName)
+            {
+                authorView.SetSelected(true);
+            }
+            else
+            {
+                authorView.SetSelected(false);
+            }
+        });
     }
 }

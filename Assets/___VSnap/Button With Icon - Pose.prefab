@@ -275,6 +275,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   label: {fileID: 2996227049494506940}
+  basicColor: {r: 0.050980393, g: 0.54901963, b: 0.89411765, a: 1}
+  SelectedColor: {r: 0.51450694, g: 0.7344151, b: 0.8867924, a: 1}
   button: {fileID: 8317774725184795972}
   authorName: 
   poseName: 

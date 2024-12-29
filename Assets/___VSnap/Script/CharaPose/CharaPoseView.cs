@@ -7,6 +7,8 @@ using TMPro;
 public class CharaPoseView : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI label;
+    [SerializeField] private Color basicColor;
+    [SerializeField] private Color SelectedColor;
 
     public Button button;
 
@@ -17,6 +19,18 @@ public class CharaPoseView : MonoBehaviour
     void Start()
     {
         button = GetComponent<Button>();
+    }
+
+    public void SetSelected(bool isSelected)
+    {
+        if (isSelected)
+        {
+            button.GetComponent<Image>().color = SelectedColor;
+        }
+        else
+        {
+            button.GetComponent<Image>().color = basicColor;
+        }
     }
     
     public void SetName(string authorName, string name)

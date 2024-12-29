@@ -66,6 +66,11 @@ public class ShapeKeyPresenter : MonoBehaviour
                 view.button.interactable = true;
             }
         }).AddTo(this);
+
+        _shapeKey.shapeKeyValues[view.rendererInstanceID][view.shapeKeyIndex].Subscribe(value =>
+        {
+            view.SetColor(value);
+        }).AddTo(this);
     }
 
 }
