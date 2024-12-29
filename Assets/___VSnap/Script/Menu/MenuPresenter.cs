@@ -15,8 +15,8 @@ public class MenuPresenter : MonoBehaviour
         menuView.leftSwipe.OnFinger.AddListener(x => menu.SetModeLeft());
         menuView.rightSwipe.OnFinger.AddListener(x => menu.SetModeLight());
 
-        menuView.upSwipe.OnFinger.AddListener(x => menu.SetOpen(true));
-        menuView.downSwipe.OnFinger.AddListener(x => menu.SetOpen(false));
+        // menuView.upSwipe.OnFinger.AddListener(x => menu.SetOpen(true));
+        // menuView.downSwipe.OnFinger.AddListener(x => menu.SetOpen(false));
 
         menuView.modeLeftButton.onClick.AddListener(() => menu.SetModeLeft());
         menuView.modeRightButton.onClick.AddListener(() => menu.SetModeLight());
@@ -31,21 +31,25 @@ public class MenuPresenter : MonoBehaviour
         menu.mode.Subscribe(x => 
         {
             menuView.SetMode(x);
+            if (x == MenuMode.Advanced)
+            {
+                menuView.SetAdvancedMode(menu.advancedMode.Value);
+            }
 
             if (x == MenuMode.PlaceChara)
             {
-                charaTransform.isTranformable.Value = true;
+                charaTransform.positionDecisionState.Value = PositionDecisionState.Ready;
             }
             else
             {
-                charaTransform.isTranformable.Value = false;
+                charaTransform.positionDecisionState.Value = PositionDecisionState.NotReady;
             }
         }).AddTo(this);
 
-        menu.isMenuOpen.Subscribe(x => 
-        {
-            menuView.SetOpen(x, menu.mode.Value);
-        }).AddTo(this);
+        // menu.isMenuOpen.Subscribe(x => 
+        // {
+        //     menuView.SetOpen(x, menu.mode.Value);
+        // }).AddTo(this);
 
         menu.advancedMode.Subscribe(x => 
         {

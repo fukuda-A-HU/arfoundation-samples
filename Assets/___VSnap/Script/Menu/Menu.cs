@@ -6,16 +6,11 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-    public SerializableReactiveProperty<bool> isMenuOpen;
+    // public SerializableReactiveProperty<bool> isMenuOpen;
     public SerializableReactiveProperty<MenuMode> mode;
     public SerializableReactiveProperty<AdvancedMenuMode> advancedMode;
     public ObservableList<AuthorView> authorButtons = new ObservableList<AuthorView>();
     public ObservableList<CharaPoseView> poseViews = new ObservableList<CharaPoseView>();
-
-    public void SetOpen(bool isOpen)
-    {
-        this.isMenuOpen.Value = isOpen;
-    }
 
     private void SetMode(MenuMode mode)
     {
@@ -79,27 +74,4 @@ public enum AdvancedMenuMode{
     DirColor,
     CharaShape,
     CharaGaze
-}
-
-public enum LightDirMode{
-    Height,
-    Rot
-}
-
-public enum EnvColorMode{
-    Hue,
-    Sat,
-    Lum
-}
-
-public enum DirColorMode{
-    Hue,
-    Sat,
-    Lum
-}
-
-public enum GazeMode{
-    Eye,
-    Head,
-    Body
 }

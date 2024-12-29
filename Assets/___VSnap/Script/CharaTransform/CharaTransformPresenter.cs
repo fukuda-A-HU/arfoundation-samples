@@ -7,6 +7,7 @@ public class CharaTransformPresenter : MonoBehaviour
 {
     [SerializeField] private CharaTransform charaTransform;
     [SerializeField] private CharaTransformView view;
+    [SerializeField] private MenuView menuView;
 
     private void Start()
     {
@@ -39,8 +40,6 @@ public class CharaTransformPresenter : MonoBehaviour
         {
             view.SetScale(value);
         }).AddTo(this);
-
-
     }
 
     private void OnDestroy()

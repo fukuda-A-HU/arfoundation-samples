@@ -52,19 +52,19 @@ public class MenuView : MonoBehaviour
     public void SetMode(MenuMode mode)
     {
         // 画面の幅を取得
-        int width = Screen.width * 3;
+        int width = Screen.width * 2;
         float duration = 0.1f;
 
         switch (mode)
         {
             case MenuMode.Basic:
                 modeLabel.text = "Basic";
-                backGroundTransform.DOAnchorPosY(800, duration);
+                backGroundTransform.DOAnchorPosY(700, duration);
                 poseTransform.DOAnchorPosX(width, duration);
                 advancedTransform.DOAnchorPosX(width, duration);
                 BasicTransform.DOAnchorPosX(0, duration);
                 gridViewTransform.DOAnchorPosX(width, duration);
-                shutterButton.gameObject.SetActive(true);
+                shutterButton.gameObject.SetActive(false);
                 break;
             case MenuMode.Pose:
                 modeLabel.text = "Pose";
@@ -73,16 +73,16 @@ public class MenuView : MonoBehaviour
                 BasicTransform.DOAnchorPosX(-width, duration);
                 advancedTransform.DOAnchorPosX(width, duration);
                 gridViewTransform.DOAnchorPosX(width, duration);
-                shutterButton.gameObject.SetActive(true);
+                shutterButton.gameObject.SetActive(false);
                 break;
             case MenuMode.Advanced:
                 modeLabel.text = "Advanced";
-                backGroundTransform.DOAnchorPosY(800, duration);
+                // backGroundTransform.DOAnchorPosY(700, duration);
                 poseTransform.DOAnchorPosX(-width, duration);
                 BasicTransform.DOAnchorPosX(-width, duration);
                 advancedTransform.DOAnchorPosX(0, duration);
                 gridViewTransform.DOAnchorPosX(width, duration);
-                shutterButton.gameObject.SetActive(true);
+                shutterButton.gameObject.SetActive(false);
                 break;
             case MenuMode.GridView:
                 modeLabel.text = "GridView";
@@ -105,51 +105,8 @@ public class MenuView : MonoBehaviour
         }
     }
 
-    public void SetOpen(bool isOpen, MenuMode mode)
-    {
-        int menuHeight = 900;
-        float duration = 0.1f;
-        int menuYPos = 0;
-
-        if (isOpen)
-        {
-            BasicTransform.DOAnchorPosY(menuYPos, duration);
-            poseTransform.DOAnchorPosY(menuYPos, duration);
-            advancedTransform.DOAnchorPosY(menuYPos, duration);
-
-            if (mode == MenuMode.PlaceChara)
-            {
-                backGroundTransform.DOAnchorPosY(0, duration);
-            }
-            else if (mode == MenuMode.Basic)
-            {
-                backGroundTransform.DOAnchorPosY(700, duration);
-            }
-            else if (mode == MenuMode.Pose)
-            {
-                backGroundTransform.DOAnchorPosY(850, duration);
-            }
-            else if (mode == MenuMode.Advanced)
-            {
-                backGroundTransform.DOAnchorPosY(800, duration);
-            }
-            else if (mode == MenuMode.GridView)
-            {
-                backGroundTransform.DOAnchorPosY(0, duration);
-            }
-        }
-        else
-        {
-            backGroundTransform.DOAnchorPosY(-menuHeight, duration);
-            BasicTransform.DOAnchorPosY(-menuHeight, duration);
-            poseTransform.DOAnchorPosY(-menuHeight, duration);
-            advancedTransform.DOAnchorPosY(-menuHeight, duration);
-        }
-    }
-
     public void SetAdvancedMode(AdvancedMenuMode mode)
     {
-        int width = Screen.width * 2;
         float duration = 0.1f;
 
         switch (mode)
@@ -159,30 +116,35 @@ public class MenuView : MonoBehaviour
                 colorPanel.SetActive(false);
                 ShapeKeyPanel.SetActive(false);
                 gazePanel.SetActive(false);
+                backGroundTransform.DOAnchorPosY(700, duration);
                 break;
             case AdvancedMenuMode.EnvColor:
                 colorPanel.SetActive(true);
                 lightDirPanel.SetActive(false);
                 ShapeKeyPanel.SetActive(false);
                 gazePanel.SetActive(false);
+                backGroundTransform.DOAnchorPosY(700, duration);
                 break;
             case AdvancedMenuMode.DirColor:
                 colorPanel.SetActive(true);
                 lightDirPanel.SetActive(false);
                 ShapeKeyPanel.SetActive(false);
                 gazePanel.SetActive(false);
+                backGroundTransform.DOAnchorPosY(700, duration);
                 break;
             case AdvancedMenuMode.CharaShape:
                 ShapeKeyPanel.SetActive(true);
                 colorPanel.SetActive(false);
                 lightDirPanel.SetActive(false);
                 gazePanel.SetActive(false);
+                backGroundTransform.DOAnchorPosY(850, duration);
                 break;
             case AdvancedMenuMode.CharaGaze:
                 gazePanel.SetActive(true);
                 ShapeKeyPanel.SetActive(false);
                 colorPanel.SetActive(false);
                 lightDirPanel.SetActive(false);
+                backGroundTransform.DOAnchorPosY(700, duration);
                 break;
         }
     }
