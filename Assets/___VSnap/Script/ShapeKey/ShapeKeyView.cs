@@ -18,7 +18,7 @@ public class ShapeKeyView : MonoBehaviour
 
     public void SetName(string rendererName, string shapeKeyName)
     {
-        text.text = $"{rendererName} - {shapeKeyName}";
+        text.text = $"{rendererName}\n{shapeKeyName}";
     }
 
     public void SetColor(float value)

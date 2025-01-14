@@ -7,14 +7,24 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour
 {
     // public SerializableReactiveProperty<bool> isMenuOpen;
-    public SerializableReactiveProperty<MenuMode> mode;
-    public SerializableReactiveProperty<AdvancedMenuMode> advancedMode;
+    public SerializableReactiveProperty<MenuMode> mode = new SerializableReactiveProperty<MenuMode>();
+    public SerializableReactiveProperty<AdvancedMenuMode> advancedMode = new SerializableReactiveProperty<AdvancedMenuMode>();
     public ObservableList<AuthorView> authorButtons = new ObservableList<AuthorView>();
     public ObservableList<CharaPoseView> poseViews = new ObservableList<CharaPoseView>();
+    public SerializableReactiveProperty<bool> isPoseCreditOpen = new SerializableReactiveProperty<bool>();
 
+    private void Start()
+    {
+        mode.Publish();
+    }
     private void SetMode(MenuMode mode)
     {
         this.mode.Value = mode;
+
+        if (mode != MenuMode.Pose)
+        {
+            isPoseCreditOpen.Value = false;
+        }
     }
 
     public void SetAdvancedMode(AdvancedMenuMode mode)

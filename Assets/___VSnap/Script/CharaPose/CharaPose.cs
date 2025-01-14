@@ -12,8 +12,6 @@ public class CharaPose : MonoBehaviour
     public SerializableReactiveProperty<Animator> animator = new SerializableReactiveProperty<Animator>();
     [SerializeField] private RuntimeAnimatorController poseController;
 
-    // =========
-    // public ObservableDictionary<string, ObservableDictionary<string, AnimationClip>> poseDictionary = new ObservableDictionary<string, ObservableDictionary<string, AnimationClip>>();
     public ObservableDictionary<string, PoseGroupInfo> poseDictionary = new ObservableDictionary<string, PoseGroupInfo>();
 
     public SerializableReactiveProperty<string> selectedAuthor = new SerializableReactiveProperty<string>();
@@ -81,6 +79,7 @@ public class CharaPose : MonoBehaviour
     private async UniTask SetPoseAsyncByName(string authorName, string poseName)
     {
         var clip = poseDictionary[authorName].poseInfo[poseName].clip;
+        Debug.Log("SetPoseAsyncByName: " + authorName + " " + poseName + " " + clip.name);
 
         if (animator != null)
         {

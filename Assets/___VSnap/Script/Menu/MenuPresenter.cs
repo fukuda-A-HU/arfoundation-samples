@@ -15,12 +15,6 @@ public class MenuPresenter : MonoBehaviour
         menuView.leftSwipe.OnFinger.AddListener(x => menu.SetModeLeft());
         menuView.rightSwipe.OnFinger.AddListener(x => menu.SetModeLight());
 
-        // menuView.upSwipe.OnFinger.AddListener(x => menu.SetOpen(true));
-        // menuView.downSwipe.OnFinger.AddListener(x => menu.SetOpen(false));
-
-        menuView.modeLeftButton.onClick.AddListener(() => menu.SetModeLeft());
-        menuView.modeRightButton.onClick.AddListener(() => menu.SetModeLight());
-
         menuView.lightDirButton.onClick.AddListener(() => menu.SetAdvancedMode(AdvancedMenuMode.LightDir));
         menuView.envColorButton.onClick.AddListener(() => menu.SetAdvancedMode(AdvancedMenuMode.EnvColor));
         menuView.dirColorButton.onClick.AddListener(() => menu.SetAdvancedMode(AdvancedMenuMode.DirColor));
@@ -33,28 +27,24 @@ public class MenuPresenter : MonoBehaviour
             menuView.SetMode(x);
             if (x == MenuMode.Advanced)
             {
-                menuView.SetAdvancedMode(menu.advancedMode.Value);
-            }
-
-            if (x == MenuMode.PlaceChara)
-            {
-                charaTransform.positionDecisionState.Value = PositionDecisionState.Ready;
-            }
-            else
-            {
-                charaTransform.positionDecisionState.Value = PositionDecisionState.NotReady;
+                menuView.SetAdvancedMode(x, menu.advancedMode.Value);
             }
         }).AddTo(this);
-
-        // menu.isMenuOpen.Subscribe(x => 
-        // {
-        //     menuView.SetOpen(x, menu.mode.Value);
-        // }).AddTo(this);
 
         menu.advancedMode.Subscribe(x => 
         {
-            menuView.SetAdvancedMode(x);
+            menuView.SetAdvancedMode(menu.mode.Value, x);
         }).AddTo(this);
+
+        menu.isPoseCreditOpen.Subscribe(x => 
+        {
+            menuView.SetPoseCredit(x, menu.mode.Value);
+        }).AddTo(this);
+
+        menuView.posesCreditButton.onClick.AddListener(() => 
+        {
+            menu.isPoseCreditOpen.Value = !menu.isPoseCreditOpen.Value;
+        });
     }
 
     private void OnDestroy()

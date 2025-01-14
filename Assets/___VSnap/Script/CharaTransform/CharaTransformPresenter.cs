@@ -1,13 +1,13 @@
 using UnityEngine;
 using R3;
-
+using Lean.Touch;
 using Cysharp.Threading.Tasks;
 
 public class CharaTransformPresenter : MonoBehaviour
 {
     [SerializeField] private CharaTransform charaTransform;
     [SerializeField] private CharaTransformView view;
-    [SerializeField] private MenuView menuView;
+    [SerializeField] private Menu menu;
 
     private void Start()
     {
@@ -40,6 +40,23 @@ public class CharaTransformPresenter : MonoBehaviour
         {
             view.SetScale(value);
         }).AddTo(this);
+
+        LeanTouch.OnFingerDown += (finger) =>
+        {
+            charaTransform.RecordPrevPosition();
+        };
+
+        LeanTouch.OnFingerUp += (finger) =>
+        {
+            // 3フレーム待ってから、menu modeがcharaの時だけ、キャラの位置を決定する
+            UniTask.DelayFrame(3).ContinueWith(() =>
+            {
+                if (menu.mode.Value != MenuMode.PlaceChara)
+                {
+                    charaTransform.SetPrevPosition();
+                }
+            });
+        };
     }
 
     private void OnDestroy()

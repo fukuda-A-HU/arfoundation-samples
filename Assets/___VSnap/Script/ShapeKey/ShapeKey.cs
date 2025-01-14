@@ -24,6 +24,14 @@ public class ShapeKey : MonoBehaviour
         shapeKeyValues[selectedIDAndIndex.Value[0]][selectedIDAndIndex.Value[1]].Value = value;
     }
 
+    public void SaveBlendShapeWeight()
+    {
+        var rendererName = GetRendererObjName(selectedIDAndIndex.Value[0]);
+        var shapeKeyName = GetShapeKeyName(selectedIDAndIndex.Value[0], selectedIDAndIndex.Value[1]);
+        var value = shapeKeyValues[selectedIDAndIndex.Value[0]][selectedIDAndIndex.Value[1]].Value;
+        PlayerPrefs.SetFloat($"{rendererName}_{shapeKeyName}", value);
+    }
+
     public string GetRendererObjName(int rendererInstanceID)
     {
         return renderers[rendererInstanceID].gameObject.name;
@@ -42,13 +50,30 @@ public class ShapeKey : MonoBehaviour
             var shapeKeyValue = new ObservableDictionary<int, ReactiveProperty<float>>();
             for (int i = 0; i < renderer.Value.Value.sharedMesh.blendShapeCount; i++)
             {
-                shapeKeyValue.Add(i, new ReactiveProperty<float>(renderer.Value.Value.GetBlendShapeWeight(i)));
+                shapeKeyValue.Add(i, new ReactiveProperty<float>(0));
+
+                // PlayerPrefsから値を取得
+                var rendererName = GetRendererObjName(renderer.Value.Key);
+                var shapeKeyName = GetShapeKeyName(renderer.Value.Key, i);
+                var value = PlayerPrefs.GetFloat($"{rendererName}_{shapeKeyName}", 0);
+                if (value != 0)
+                {
+                    shapeKeyValue[i].Value = value;
+                    renderer.Value.Value.SetBlendShapeWeight(i, value);
+                }
 
                 // ReactivePropertyの値が変更された時にRendererのWeightを変更
                 shapeKeyValue[i].Subscribe(value =>
                 {
+                    //out of range exception 抑制
+                    if (selectedIDAndIndex.Value.Length == 0)
+                    {
+                        return;
+                    }
                     renderer.Value.Value.SetBlendShapeWeight(selectedIDAndIndex.Value[1], value);
                 }).AddTo(this);
+
+
             }
 
             shapeKeyValues.Add(renderer.Value.Key, shapeKeyValue);

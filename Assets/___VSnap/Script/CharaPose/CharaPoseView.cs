@@ -39,4 +39,9 @@ public class CharaPoseView : MonoBehaviour
         this.poseName = name;
         label.text = name;
     }
+
+    private void OnDestroy()
+    {
+        button.onClick.RemoveAllListeners();
+    }
 }

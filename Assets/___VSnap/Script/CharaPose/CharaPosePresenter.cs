@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using R3;
+using Cysharp.Threading.Tasks;
 
 public class CharaPosePresenter : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class CharaPosePresenter : MonoBehaviour
         // Model -> View
         pose.poseNameInfo.Subscribe(x =>
         {
+            if(x == null) { return; }
+
             if (x.authorName == poseView.authorName && x.poseName == poseView.poseName)
             {
                 poseView.SetSelected(true);
@@ -27,7 +30,7 @@ public class CharaPosePresenter : MonoBehaviour
             {
                 poseView.SetSelected(false);
             }
-        });
+        }).AddTo(poseView.gameObject);
     }
 
     public void OnCreateAuthorView(CharaPose pose, AuthorView authorView)
@@ -49,6 +52,6 @@ public class CharaPosePresenter : MonoBehaviour
             {
                 authorView.SetSelected(false);
             }
-        });
+        }).AddTo(authorView.gameObject);
     }
 }

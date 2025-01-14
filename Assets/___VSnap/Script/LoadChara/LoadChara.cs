@@ -5,7 +5,7 @@ using UniVRM10;
 using System;
 using System.Threading;
 using RootMotion.FinalIK;
-using Unity.VisualScripting;
+using System.IO;
 
 public class LoadChara : MonoBehaviour
 {
@@ -16,6 +16,25 @@ public class LoadChara : MonoBehaviour
     public SerializableReactiveProperty<string> errorMessage = new SerializableReactiveProperty<string>();
 
     private Vrm10Instance instance = new Vrm10Instance();
+    [SerializeField] private string defaultModelPath;
+
+    private void Start()
+    {
+        filepath.Subscribe(async value =>
+        {
+            if (value != null && File.Exists(value))
+            {
+                PlayerPrefs.SetString("ModelPath", value);
+                await LoadModel(filepath.Value);
+            }
+        }).AddTo(this);
+
+        filepath.Value = PlayerPrefs.GetString("ModelPath");
+        if (filepath.Value != null && File.Exists(filepath.Value))
+        {
+            filepath.Value = Application.streamingAssetsPath + defaultModelPath;
+        }
+    }
 
     public async UniTask Load()
     {
@@ -29,15 +48,10 @@ public class LoadChara : MonoBehaviour
                 if (!path.EndsWith(".vrm"))
                 {
                     message.Value = "Only vrm file can load";
-
-                    filepath.Value = null;
                 }
                 else
                 {
                     filepath.Value = path;
-
-                    loadModel();
-                    // SimpleLoadModel(path);
                 }
             }
         });
@@ -57,7 +71,7 @@ public class LoadChara : MonoBehaviour
 
     }
 
-    public async UniTask loadModel(){
+    public async UniTask LoadModel(string _filepath){
 
         message.Value = "Model Loading...";
 
@@ -81,7 +95,7 @@ public class LoadChara : MonoBehaviour
                 
                 message.Value = "Model Loading... " + loadCount.ToString();
 
-                instance = await Vrm10.LoadPathAsync(path: filepath.Value, canLoadVrm0X: true, ct: linkedToken);
+                instance = await Vrm10.LoadPathAsync(path: _filepath, canLoadVrm0X: true, ct: linkedToken);
                 
                 if (instance != null && instance.gameObject != null)
                 {
@@ -121,14 +135,5 @@ public class LoadChara : MonoBehaviour
 
             loadCount--;
         }
-    }
-
-    public async UniTask SimpleLoadModel(string path)
-    {
-        instance = await Vrm10.LoadPathAsync(path: path, canLoadVrm0X: true);
-        Debug.Log("Load Passed");
-        await UniTask.WaitUntil(() => instance != null && instance.gameObject != null);
-        Debug.Log("Check Passed");
-        chara.Value = instance.gameObject;
     }
 }

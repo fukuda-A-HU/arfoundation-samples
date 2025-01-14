@@ -14,9 +14,14 @@ public class ShapeKeyPresenter : MonoBehaviour
     private void Start()
     {
         // view -> model は今のうちに。 model -> viewはshapeKeyのIDが変更された時に
-        sliderView.slider.onValueChanged.AddListener(value =>
+        sliderView.extendedSlider.onValueChanged.AddListener(value =>
         {
             shapeKey.SetBlendShapeWeight(value);
+        });
+
+        sliderView.extendedSlider.onRelease.AddListener(value =>
+        {
+            shapeKey.SaveBlendShapeWeight();
         });
 
         // model -> view
@@ -32,7 +37,7 @@ public class ShapeKeyPresenter : MonoBehaviour
             // shapeKey.shapeKeyValues[idAndIndex[0]][idAndIndex[2]]の値を購読して、sliderViewの値を変更する
             disposable = shapeKey.shapeKeyValues[idAndIndex[0]][idAndIndex[1]].Subscribe(value =>
             {
-                sliderView.slider.value = value;
+                sliderView.extendedSlider.value = value;
             }).AddTo(this);
             
             sliderView.SetName(shapeKey.GetRendererObjName(idAndIndex[0]), shapeKey.GetShapeKeyName(idAndIndex[0], idAndIndex[1]));
@@ -42,7 +47,7 @@ public class ShapeKeyPresenter : MonoBehaviour
 
     private void OnDestroy()
     {
-        sliderView.slider.onValueChanged.RemoveAllListeners();
+        sliderView.extendedSlider.onValueChanged.RemoveAllListeners();
     }
 
 

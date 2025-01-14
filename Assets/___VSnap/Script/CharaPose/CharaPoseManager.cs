@@ -1,30 +1,48 @@
 using UnityEngine;
 using ObservableCollections;
 using Cysharp.Threading.Tasks;
+using UnityEngine.AddressableAssets;
+using R3;
 
 public class CharaPoseManager : MonoBehaviour
 {
-    [SerializeField] private PoseObject poseObject;
     [SerializeField] private CharaPose pose;
+    public SerializableReactiveProperty<string> message = new SerializableReactiveProperty<string>();
+    public SerializableReactiveProperty<PoseObject> poseObject = new SerializableReactiveProperty<PoseObject>();
+
+    public bool isInitialized
+    {
+        get;
+        private set;
+    } = false;
 
     private void Start()
     {
-        ReloadPoseDelay().Forget();
-    }
+        poseObject.Subscribe(async x =>
+        {
+            if (x != null)
+            {
+                await ReloadPose(x);
+            }
+        }).AddTo(this);
 
-    private async UniTask ReloadPoseDelay()
-    {
-        await UniTask.Yield();
-        ReloadPoseButton();
+        isInitialized = true;
     }
     
-    public void ReloadPoseButton()
+    public async UniTask ReloadPose(PoseObject _poseObject)
     {
+        await UniTask.Yield();
+
         pose.poseDictionary.Clear();
 
-        foreach (var clipGroup in poseObject.animationClipGroup)
+        if (_poseObject == null)
         {
-            // clipGroup.nameがすでにposeDictionaryに存在する場合はスキップ
+            Debug.LogError("PoseObject is null");
+            return;
+        }
+
+        foreach (var clipGroup in _poseObject.animationClipGroup)
+        {
             if (pose.poseDictionary.ContainsKey(clipGroup.name))
             {
                 Debug.LogWarning("PoseGroup: " + clipGroup.name + " is already exist.");
@@ -48,9 +66,6 @@ public class CharaPoseManager : MonoBehaviour
 
             pose.poseDictionary.Add(clipGroup.name, poseGroup);
         }
-
         pose.selectedAuthor.Value = null;
     }
-
-
 }

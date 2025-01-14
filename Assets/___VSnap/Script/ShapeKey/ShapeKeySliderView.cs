@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class ShapeKeySliderView : MonoBehaviour
 {
-    public Slider slider;
+    public ExtendedSlider extendedSlider;
     [SerializeField] private TextMeshProUGUI text;
 
     public void SetName(string rendererName, string shapeKeyName)

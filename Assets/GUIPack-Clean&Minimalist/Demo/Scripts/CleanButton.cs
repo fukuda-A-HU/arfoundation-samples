@@ -28,16 +28,16 @@ namespace Ricimi
 
         public override void OnPointerEnter(PointerEventData eventData)
         {
-            base.OnPointerEnter(eventData);
-            StopAllCoroutines();
-            StartCoroutine(Utils.FadeOut(canvasGroup, config.onHoverAlpha, config.fadeTime));
+            // base.OnPointerEnter(eventData);
+            // StopAllCoroutines();
+            // StartCoroutine(Utils.FadeOut(canvasGroup, config.onHoverAlpha, config.fadeTime));
         }
 
         public override void OnPointerExit(PointerEventData eventData)
         {
-            base.OnPointerExit(eventData);
-            StopAllCoroutines();
-            StartCoroutine(Utils.FadeIn(canvasGroup, 1.0f, config.fadeTime));
+            // base.OnPointerExit(eventData);
+            // StopAllCoroutines();
+            // StartCoroutine(Utils.FadeIn(canvasGroup, 1.0f, config.fadeTime));
         }
 
         public override void OnPointerDown(PointerEventData eventData)

@@ -33,4 +33,9 @@ public class AuthorView : MonoBehaviour
         label.text = name;
         authorName = name;
     }
+
+    private void OnDestroy()
+    {
+        button.onClick.RemoveAllListeners();
+    }
 }

@@ -7,8 +7,6 @@ using R3;
 public class ShapeKeyManager : MonoBehaviour
 {
     public ObservableList<ShapeKeyView> shapeKeyViews = new ObservableList<ShapeKeyView>();
-    [SerializeField] private GameObject sliderPrefab;
-    [SerializeField] private RectTransform sliderParent;
     [SerializeField] private Button buttonPrefab;
     [SerializeField] private RectTransform buttonParent;
 
@@ -17,15 +15,14 @@ public class ShapeKeyManager : MonoBehaviour
     private void Start()
     {
         // 追加された時の処理
-        shapeKeyComponent.shapeKeyValues.ObserveAdd().Subscribe(shapeKeyValue =>
+        shapeKeyComponent.shapeKeyValues.ObserveAdd().Subscribe(async shapeKeyValue =>
         {
             var rendererName = shapeKeyComponent.GetRendererObjName(shapeKeyValue.Value.Key);
             foreach (var shapeKey in shapeKeyValue.Value.Value)
             {
                 var shapeKeyName = shapeKeyComponent.GetShapeKeyName(shapeKeyValue.Value.Key, shapeKey.Key);
-                // var view = Instantiate(sliderPrefab, sliderParent).GetComponent<ShapeKeyView>();
-                var view = Instantiate(buttonPrefab, buttonParent).GetComponent<ShapeKeyView>();
-                // Debug.Log("add ShapeKey : " + shapeKeyName);
+                var viewPrefab = await InstantiateAsync(buttonPrefab, buttonParent);
+                var view = viewPrefab[0].GetComponent<ShapeKeyView>();
                 view.SetName(rendererName, shapeKeyName);
                 view.rendererInstanceID = shapeKeyValue.Value.Key;
                 view.shapeKeyIndex = shapeKey.Key;
